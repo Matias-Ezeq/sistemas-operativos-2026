@@ -1,0 +1,15 @@
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/bin/Debug/net10.0/pipeClient
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/bin/Debug/net10.0/pipeClient.deps.json
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/bin/Debug/net10.0/pipeClient.runtimeconfig.json
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/bin/Debug/net10.0/pipeClient.dll
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/bin/Debug/net10.0/pipeClient.pdb
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/pipeClient.GeneratedMSBuildEditorConfig.editorconfig
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/pipeClient.AssemblyInfoInputs.cache
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/pipeClient.AssemblyInfo.cs
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/pipeClient.csproj.CoreCompileInputs.cache
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/pipeClient.sourcelink.json
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/pipeClient.dll
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/refint/pipeClient.dll
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/pipeClient.pdb
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/pipeClient.genruntimeconfig.cache
+/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/obj/Debug/net10.0/ref/pipeClient.dll

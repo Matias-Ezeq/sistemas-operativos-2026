@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OXr+k3i1gps=",
+  "success": true,
+  "projectFilePath": "/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeClient/pipeClient.csproj",
+  "expectedPackageFiles": [
+    "/home/ezequiel/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
