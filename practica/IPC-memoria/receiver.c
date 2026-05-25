@@ -9,7 +9,7 @@
 #include <errno.h>
 #include <string.h>
 
-#define BUFFSIZE getpagesize()
+#define BUFFSIZE 1024
 #define KEY 1234
 
 int main() {
@@ -22,7 +22,7 @@ int main() {
     char message;
     struct shmmsg *shm;
 
-    shmid = shmget(KEY,BUFFSIZE,IPC_CREAT | 0666);
+    shmid = shmget(KEY,BUFFSIZE, 0666);
     if (shmid == -1){
         perror("shmget");
         return 1;
@@ -33,12 +33,15 @@ int main() {
         strerror(errno);
         return 1;
     }
-    printf("id: %i, address: %X",shmid,shm);
+    printf("id: %i, address: %X\n",shmid,shm);
+    while(!shm->msg[0]){
+        printf("esperando mensaje.\n");
+        printf("\x1b[1F"); // Move to beginning of previous line
+        printf("\x1b[2K"); // Clear entire line
+    }
 
-   
-        printf("sender says:\n%s\n",shm->msg);
-        shm->read = 1;
-    
+    printf("sender dice: %s\n",shm->msg);
+    shm->read = 1;
 
     shmdt(shm);
 
