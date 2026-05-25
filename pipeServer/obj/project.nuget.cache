@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qft4bN5aK5E=",
+  "dgSpecHash": "ReUWu9ujtno=",
   "success": true,
   "projectFilePath": "/home/ezequiel/Unahur/2026/Sistemas operativos/sistemas-operativos-2026/pipeServer/pipeServer.csproj",
   "expectedPackageFiles": [
-    "/home/ezequiel/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
+    "/home/ezequiel/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.8/microsoft.aspnetcore.app.ref.10.0.8.nupkg.sha512"
   ],
   "logs": []
 }
