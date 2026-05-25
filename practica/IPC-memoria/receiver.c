@@ -9,13 +9,13 @@
 #include <errno.h>
 #include <string.h>
 
-#define BUFFSIZE 1024 //getpagesize()
+#define BUFFSIZE getpagesize()
 #define KEY 1234
 
 int main() {
     struct shmmsg {
         int read;
-        char msg[BUFFSIZE];
+        char msg[BUFFSIZE - 1];
     };
     
     int shmid;
@@ -35,13 +35,10 @@ int main() {
     }
     printf("id: %i, address: %X",shmid,shm);
 
-    if(shm->msg){
+   
         printf("sender says:\n%s\n",shm->msg);
         shm->read = 1;
-    }
-    else {
-        printf("no message");
-    }
+    
 
     shmdt(shm);
 

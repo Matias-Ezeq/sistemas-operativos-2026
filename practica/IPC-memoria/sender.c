@@ -9,13 +9,13 @@
 #include <errno.h>
 #include <string.h>
 
-#define BUFFSIZE 1024 //getpagesize()
+#define BUFFSIZE getpagesize()
 #define KEY 1234
 
 int main(int argc, char *argv[]) {
     struct shmmsg {
         int read;
-        char msg[BUFFSIZE / 2];
+        char msg[BUFFSIZE - 1];
     };
 
     int shmid;
@@ -32,15 +32,25 @@ int main(int argc, char *argv[]) {
         strerror(errno);
         return 1;
     }
-    printf("id: %i, address: %X",shmid,shm);
+    printf("id: %i, address: %X\n",shmid,shm);
     char *message = shm->msg;
+    //char mensaje[];
+    printf("Mensaje: ");
+    fgets(message,sizeof(shm->msg),stdin);
+    printf("%s\n",message);
+    
+    //int length = sizeof(mensaje) / sizeof(mensaje[0]);
 
-    message = "Hello world!";
+    //for(int i = 0; i < length; i++){
+    //    message[i] = mensaje[i];
+    //}
+
+
 
     while (shm->read != 1) {
         printf("waiting for the message to be read.\n");
-        sleep(10);
-    };
+        sleep(2);
+    }
 
     shmdt(shm);
     shmctl(shmid,IPC_RMID, 0);
