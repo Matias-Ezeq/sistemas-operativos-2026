@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 // Incluir biblioteca de hilos para gestión de hilos
 #include <pthread.h>
@@ -15,7 +14,7 @@ int recursoCompartido1 = 0, recursoCompartido2 = 0;
 
 void* hilo1(void* arg) {
     int id = *(int*)arg; // Obtener el ID del hilo desde el argumento
-    printf("Valor del recurso %d\n", recursoCompartido1); // Imprimir que el hilo libera el recurso
+    printf("Valor del recurso 1: %d\n", recursoCompartido1); // Imprimir que el hilo libera el recurso
     printf("hilo %d pidiendo recurso 1\n", id); // Imprimir que el hilo pidió el recurso
     sem_wait(&semaforo_recurso1); // Esperar (bloquear) semáforo semaforo_recurso para pedir acceso al recurso
 
